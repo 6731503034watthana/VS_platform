@@ -1,0 +1,25 @@
+{
+  "name": "rest-vs-graphql-demo",
+  "version": "1.0.0",
+  "description": "Runnable REST and GraphQL demo servers with automated tests",
+  "private": true,
+  "scripts": {
+    "start:rest": "node rest/server.js",
+    "start:graphql": "node graphql/server.js",
+    "test": "jest --verbose",
+    "test:rest": "jest tests/rest.test.js --verbose",
+    "test:graphql": "jest tests/graphql.test.js --verbose"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "@apollo/server": "^5.5.1",
+    "express": "^5.2.1",
+    "graphql": "^16.14.2"
+  },
+  "devDependencies": {
+    "jest": "^30.5.2",
+    "supertest": "^7.2.2"
+  }
+}
